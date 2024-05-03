@@ -1,0 +1,50 @@
+[tool.poetry]
+name = "bperf"
+version = "0.1.0"
+description = ""
+authors = ["Vincent Labelle <vetches_canto_0s@icloud.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+numpy = "^1.22.3"
+
+[tool.poetry.dev-dependencies]
+pytest = "^7.1"
+black = "^22.3.0"
+isort = "^5.10.1"
+flake8 = "^4.0.1"
+pytest-cov = "^3.0.0"
+mypy = "^0.950"
+
+[tool.black]
+line-length = 80
+
+[tool.isort]
+profile = "black"
+line_length = 80
+
+[tool.mypy]
+check_untyped_defs = true
+disallow_any_generics = true
+disallow_incomplete_defs = true
+disallow_subclassing_any = true
+disallow_untyped_calls = true
+disallow_untyped_decorators = true
+disallow_untyped_defs = true
+implicit_reexport = true
+no_implicit_optional = true
+pretty = true
+show_error_codes = true
+show_none_errors = true
+strict_concatenate = true
+strict_equality = true
+strict_optional = true
+warn_no_return = true
+warn_redundant_casts = true
+warn_return_any = true
+warn_unused_configs = true
+warn_unused_ignores = true
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
